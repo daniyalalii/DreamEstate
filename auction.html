@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamEstate - Auctions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">DreamEstate</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="listing.html">Listings</a>
+            <a href="community.html">Community</a>
+            <a href="auction.html">Auctions</a>
+            <a href="auth.html">Login</a>
+            <a href="contactUs.html">Contact US</a>
+        </nav>
+    </header>
+
+    <section class="auction-page">
+        <h2>Live Property Auctions</h2>
+        <div class="auction-grid">
+            <div class="auction-card">
+                <img src="/resources/bid_property.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>Luxury Villa</h3>
+                    <p>Location: Malibu, CA</p>
+                    <p>Current Bid: <strong>$2,300,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="60">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="auction-card">
+                <img src="/resources/house_bid.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>Mountain Cabin</h3>
+                    <p>Location: Denver, CO</p>
+                    <p>Current Bid: <strong>$870,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="90">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="auction-card">
+                <img src="/resources/cottage.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>City Penthouse</h3>
+                    <p>Location: NYC, NY</p>
+                    <p>Current Bid: <strong>$3,500,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="120">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="auction-card">
+                <img src="/resources/bid_property.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>Luxury Villa</h3>
+                    <p>Location: Malibu, CA</p>
+                    <p>Current Bid: <strong>$2,300,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="60">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="auction-card">
+                <img src="/resources/house_bid.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>Mountain Cabin</h3>
+                    <p>Location: Denver, CO</p>
+                    <p>Current Bid: <strong>$870,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="90">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+
+            <div class="auction-card">
+                <img src="/resources/cottage.jpg" alt="Auction Property" />
+                <div class="auction-info">
+                    <h3>City Penthouse</h3>
+                    <p>Location: NYC, NY</p>
+                    <p>Current Bid: <strong>$3,500,000</strong></p>
+                    <p>Ends In: <span class="countdown" data-time="120">Loading...</span></p>
+                    <button onclick="placeBid(this)">Place Bid</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 DreamEstate. All rights reserved.</p>
+    </footer>
+
+    <script src="auction.js"></script>
+</body>
+
+</html>

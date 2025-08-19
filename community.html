@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamEstate - Community</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">DreamEstate</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="listing.html">Listings</a>
+            <a href="community.html">Community</a>
+            <a href="auction.html">Auctions</a>
+            <a href="auth.html">Login</a>
+            <a href="contactUs.html">Contact US</a>
+        </nav>
+    </header>
+
+    <section class="community-page">
+        <h2>Community Blog</h2>
+        <div class="blog-grid">
+            <div class="blog-card" onclick="viewPost(1)">
+                <h3>5 Tips for First-Time Buyers</h3>
+                <p>Buying your first home? Here’s what you need to know before you invest...</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(2)">
+                <h3>Land Investment: Pros & Cons</h3>
+                <p>Land can be a valuable asset. Learn the advantages and risks before buying.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(3)">
+                <h3>Renting vs Buying</h3>
+                <p>Should you rent or buy in today’s market? Here’s a breakdown of key factors.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(4)">
+                <h3>How to Stage Your Home for Sale</h3>
+                <p>First impressions matter. Learn how to prepare your home to attract more buyers.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(5)">
+                <h3>Understanding Property Taxes</h3>
+                <p>New to real estate? Get familiar with how property taxes work and what to expect.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(6)">
+                <h3>Real Estate Auctions Explained</h3>
+                <p>Thinking of bidding at a property auction? Here’s how the process works.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(7)">
+                <h3>Top Renovations That Add Value</h3>
+                <p>Want to increase your home’s value? These upgrades deliver the best returns.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(8)">
+                <h3>How to Pick the Right Neighborhood</h3>
+                <p>Location is key. Here’s what to consider when choosing your future community.</p>
+                <span>Read More</span>
+            </div>
+
+            <div class="blog-card" onclick="viewPost(9)">
+                <h3>What to Expect During Closing</h3>
+                <p>From paperwork to final payments, learn what happens when a home sale closes.</p>
+                <span>Read More</span>
+            </div>
+
+
+
+        </div>
+
+        <div class="blog-post" id="post-view" style="display:none;">
+            <h2 id="post-title">Blog Title</h2>
+            <p id="post-content">Blog content will appear here.</p>
+
+            <div class="comments">
+                <h3>Comments</h3>
+                <div id="comment-list">
+                    <p><strong>Alice:</strong> Great tips, thanks!</p>
+                </div>
+
+                <form id="comment-form">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <textarea id="comment" rows="3" placeholder="Write a comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 DreamEstate. All rights reserved.</p>
+    </footer>
+
+    <script src="community.js"></script>
+</body>
+
+</html>

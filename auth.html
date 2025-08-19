@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamEstate - Login / Signup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">DreamEstate</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="listing.html">Listings</a>
+            <a href="community.html">Community</a>
+            <a href="auction.html">Auctions</a>
+            <a href="auth.html">Login</a>
+            <a href="contactUs.html">Contact US</a>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 id="form-title">Login</h2>
+            <form id="auth-form">
+                <input type="text" id="auth-name" placeholder="Full Name" class="hidden" />
+                <input type="email" id="auth-email" placeholder="Email" required />
+                <input type="password" id="auth-password" placeholder="Password" required />
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle-text">
+                Don't have an account?
+                <span id="toggle-link">Sign Up</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const formTitle = document.getElementById("form-title");
+        const nameInput = document.getElementById("auth-name");
+        const toggleLink = document.getElementById("toggle-link");
+        const authForm = document.getElementById("auth-form");
+
+        let isSignup = false;
+
+        toggleLink.addEventListener("click", () => {
+            isSignup = !isSignup;
+            formTitle.textContent = isSignup ? "Sign Up" : "Login";
+            nameInput.classList.toggle("hidden", !isSignup);
+            toggleLink.textContent = isSignup ? "Log In" : "Sign Up";
+            document.querySelector(".toggle-text").childNodes[0].textContent =
+                isSignup ? "Already have an account? " : "Don't have an account? ";
+        });
+
+        authForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = nameInput.value;
+            const email = document.getElementById("auth-email").value;
+            const password = document.getElementById("auth-password").value;
+
+            alert(isSignup ? `Signed up as ${name} (${email})` : `Logged in as ${email}`);
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 1000);
+        });
+
+    </script>
+</body>
+
+</html>

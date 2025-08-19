@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamEstate - Listings</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-logo">DreamEstate</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="listing.html">Listings</a>
+            <a href="community.html">Community</a>
+            <a href="auction.html">Auctions</a>
+            <a href="auth.html">Login</a>
+            <a href="contactUs.html">Contact US</a>
+        </nav>
+    </header>
+
+    <section class="listings-page">
+        <aside class="filters">
+            <h3>Filters</h3>
+            <label>Location:</label>
+            <input type="text" placeholder="City or Zip Code" />
+
+            <label>Price Range:</label>
+            <select>
+                <option>Any</option>
+                <option>Under $500k</option>
+                <option>$500k - $1M</option>
+                <option>Over $1M</option>
+            </select>
+
+            <label>Property Type:</label>
+            <select>
+                <option>Any</option>
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Land</option>
+            </select>
+
+            <label>Status:</label>
+            <select>
+                <option>All</option>
+                <option>For Sale</option>
+                <option>For Rent</option>
+                <option>For Auction</option>
+            </select>
+
+            <button class="glow-button">Apply Filters</button>
+        </aside>
+
+        <main class="listings-container">
+            <h2>Available Properties</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <img src="/resources/modern_apartment.jpg" alt="Property" />
+                    <div class="property-info">
+                        <h3>Spacious Apartment</h3>
+                        <p>Chicago, IL</p>
+                        <button class="btn"><span>$900,000</span></button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="/resources/luxury_villa.jpg" alt="Property" />
+                    <div class="property-info">
+                        <h3>Seaside Villa</h3>
+                        <p>Miami, FL</p>
+                        <button class="btn"><span>$2,300,000</span></button>
+                    </div>
+                </div>
+
+                
+
+                <div class="property-card">
+                    <img src="/resources/cottage.jpg" alt="Property" />
+                    <div class="property-info">
+                        <h3>Urban Loft</h3>
+                        <p>Seattle, WA</p>
+                        <button class="btn"><span>$1,200,000</span></button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <img src="/resources/modern_apartment.jpg" alt="Property" />
+                    <div class="property-info">
+                        <h3>Spacious Apartment</h3>
+                        <p>Chicago, IL</p>
+                        <button class="btn"><span>$900,000</span></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 DreamEstate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
